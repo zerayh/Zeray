@@ -7,5 +7,6 @@ print("hello Ghana!")
 print("some changes")
 
 print("some more changes")
-Print("Hell, AIMS Ghana members")
-Print("what is the missing value in the equation x+6=100")
+print("Hello, AIMS Ghana members")
+
+print("what is the missing value in the equation: x+100=100")
