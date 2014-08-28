@@ -7,3 +7,4 @@ print("hello Ghana!")
 print("some changes")
 
 print("some more changes")
+Print("Hell, AIMS Ghana members")
