@@ -10,3 +10,4 @@ print("some more changes")
 print("Hello, AIMS Ghana members")
 
 print("what is the missing value in the equation: x+100=100")
+print("x+7=4")
