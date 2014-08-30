@@ -8,8 +8,8 @@ def area_circle(radius: Number) -> Number:
     Calculate area of a circle.
     :param radius: the radius of circle
     :return: the area (square units of radius)
-    >>>area_circle(7)
-    153.93804002589985
+    >>>area_circle(3)
+    28.274333882308138
     """
     return pi*radius**2
 
@@ -19,8 +19,8 @@ def perimeter_circle(radius: Number) ->Number:
    Calculate perimeter of the circle.
    :param radius: the radius of circle
    :return: the perimeter (same units of radius)
-   >>>perimeter_circle(6)
-   37.69911184307752
+   >>>perimeter_circle(3)
+   18.84955592153876
    """
     return 2*pi*radius
 
@@ -55,8 +55,8 @@ def surface_area_cylinder(radius: Number, height: Number) -> Number:
     :param radius: the radius the cylinder
     :param height: the height of the cylinder
     :return: the surface area (square units of the radius and height)
-    >>>surface_area_cylinder(8, 10)
-    904.7786842338604
+    >>>surface_area_cylinder(3, 4)
+    131.94689145077132
     """
     return 2*pi*radius**2 + 2*pi*radius*height
 
@@ -67,8 +67,8 @@ def volume_cylinder(radius: Number, height: Number) -> Number:
     :param radius: the radius the cylinder
     :param height: the height of the cylinder
     :return: the volume (cubic units of the radius and height)
-    >>>volume_cylinder(8,10)
-    2010.6192982974676
+    >>>volume_cylinder(3,4)
+    113.09733552923255
     """
     return pi*radius**2*height
 
@@ -106,8 +106,8 @@ def surface_area_cone(side: Number, radius: Number) -> Number:
     :param side: the side of the cone
     :param radius: the radius of the cone
     :return: the surface area (square units of the side and radius)
-    >>>surface_area_cone(10,3)
-    122.52211349000193
+    >>>surface_area_cone(5,3)
+    75.39822368615503
     """
     return pi*radius*side + pi*radius**2
 
@@ -118,8 +118,8 @@ def volume_cone(r, h: Number) -> Number:
     :param r: the radius of the cone
     :param h: the height of the cone
     :return: the volume (cubic units of the radius and height)
-    >>>volume_cone(3, 8)
-    75.39822368615503
+    >>>volume_cone(3, 4)
+    37.69911184307752
     """
     return 1/3*pi*r**2*h
 
@@ -155,8 +155,8 @@ def surface_area_sphere(r: Number) -> Number:
     Calculate surface area of the sphere.
     :param r: the radius of the sphere
     :return: the surface area (square units of the radius)
-    >>>surface_area_sphere(5)
-    314.1592653589793
+    >>>surface_area_sphere(3)
+    113.09733552923255
     """
     return 4*pi*r**2
 
@@ -166,8 +166,8 @@ def volume_sphere(r: Number) -> Number:
     Calculate volume of the sphere.
     :param r: the radius of the sphere
     :return: the volume (cubic units of the radius)
-    >>>volume_sphere(5)
-    523.5987755982989
+    >>>volume_sphere(3)
+    113.09733552923254
     """
     return 4/3*pi*r**3
 
@@ -308,6 +308,6 @@ def area_triangle(x=None, y=None, z=None, h=None, theta=None) ->Number:
     else:
         return "the argument given are inadequate to compute area"
 
-print(area_triangle(x=12))
-print(area_triangle(y=10))
+print(area_triangle(x=10))
+print(area_triangle(y=15))
 print(area_triangle(z=20))
