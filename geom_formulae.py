@@ -11,6 +11,7 @@ def area_circle(radius: Number) -> Number:
     """
     return pi*radius**2
 
+
 def perimeter_circle(radius: Number) ->Number:
    """
    Calculate perimeter of the circle.
@@ -32,6 +33,7 @@ def perimeter_rectangle(length: Number, width: Number) -> Number:
     36
     """
     return 2*length + 2*width
+
 
 def area_rectangle(length: Number, width: Number) -> Number:
     """
