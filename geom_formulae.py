@@ -1,35 +1,6 @@
 __author__ = 'hagos'
 from numpy import *
 from numbers import Number
-def square_perimeter(side : Number):
-    """
-    Calculate perimeter of a square from side length.
-    :param side:  the side length
-    :return: the perimeter (same units as side length)
-    >>> square_perimeter(4)
-    16
-    """
-
-    return 4*side
-
-def square_area(side):
-    """
-    Calculate area of a square from side length.
-    :param side: the side length
-    :return: the area (units^2 from side)
-    >>> square_area(4)
-    16
-    """
-
-    return side*side
-
-if __name__ == "__main__":
-    sampleSide = 4
-    print("area:",
-          square_area(sampleSide),
-          "perimeter:",
-          square_perimeter(sampleSide))
-
 def area_circle(radius: Number) -> Number:
     """
     Calculate area of a circle.
@@ -47,9 +18,9 @@ def perimeter_circle(radius: Number) ->Number:
    :return: the perimeter (same units of radius)
    >>>perimeter_circle(6)
    37.69911184307752
-
    """
    return 2*pi*radius
+
 
 def perimeter_rectangle(length: Number, width: Number) -> Number:
     """
@@ -73,19 +44,18 @@ def area_rectangle(length: Number, width: Number) -> Number:
     """
     return length*width
 
-print(area_rectangle(8,10))
+
 def surface_area_cylinder(radius: Number, height: Number) -> Number:
     """
     Calculate surface area of the cylinder.
     :param radius: the radius the cylinder
     :param height: the height of the cylinder
     :return: the surface area (square units of the radius and height)
-    >>>
-
+    >>>surface_area_cylinder(8, 10)
+    904.7786842338604
     """
     return 2*pi*radius**2 + 2*pi*radius*height
 
-print(surface_area_cylinder(4,10))
 
 def volum_cylinder(radius: Number, height: Number) -> Number:
     """
@@ -95,11 +65,9 @@ def volum_cylinder(radius: Number, height: Number) -> Number:
     :return: the volume (cubic units of the radius and height)
     >>>volum_cylinder(8,10)
     2010.6192982974676
-
     """
     return pi*radius**2*height
 
-print(volum_cylinder(8,10))
 
 def perimeter_trapezoid(side_1: Number, side_2: Number, base_1: Number, base_2: Number) -> Number:
     """
@@ -114,7 +82,6 @@ def perimeter_trapezoid(side_1: Number, side_2: Number, base_1: Number, base_2: 
     """
     return side_1 + side_2 + base_1 + base_2
 
-print(perimeter_trapezoid(3, 5, 4, 7))
 
 def area_trapezoid(base_1: Number, base_2: Number, height: Number) -> Number:
     """
@@ -123,11 +90,11 @@ def area_trapezoid(base_1: Number, base_2: Number, height: Number) -> Number:
     :param base_2: the base of trapezoid
     :param height: the height of trapezoid
     :return: the area (square units of the base and height)
-    >>>
+    >>>area_trapezoid(4, 7, 6)
+    33.0
     """
     return 1/2*(base_1 + base_2)*height
 
-print(area_trapezoid(5, 7, 4))
 
 def surface_area_cone(side: Number, radius: Number) -> Number:
     """
@@ -140,7 +107,6 @@ def surface_area_cone(side: Number, radius: Number) -> Number:
     """
     return pi*radius*side + pi*radius**2
 
-print(surface_area_cone(10, 3))
 
 def volume_cone(r,h: Number) -> Number:
     """
@@ -153,7 +119,6 @@ def volume_cone(r,h: Number) -> Number:
     """
     return 1/3*pi*r**2*h
 
-print(volume_cone(3, 8))
 
 def surface_area_rectangular_prism(w,h,l: Number) -> Number:
     """
@@ -167,7 +132,6 @@ def surface_area_rectangular_prism(w,h,l: Number) -> Number:
     """
     return 2*(w*h + l*w + l*h)
 
-print(surface_area_rectangular_prism(2, 4, 8))
 
 def volume_rectangular_prism(w,h,l: Number) -> Number:
     """
@@ -181,7 +145,6 @@ def volume_rectangular_prism(w,h,l: Number) -> Number:
     """
     return l*w*h
 
-print(volume_rectangular_prism(2, 4, 8))
 
 def surface_area_sphere(r: Number) -> Number:
     """
@@ -193,7 +156,6 @@ def surface_area_sphere(r: Number) -> Number:
     """
     return 4*pi*r**2
 
-print(surface_area_sphere(5))
 
 def volume_sphere(r: Number) -> Number:
     """
@@ -205,7 +167,6 @@ def volume_sphere(r: Number) -> Number:
     """
     return 4/3*pi*r**3
 
-print(volume_sphere(5))
 
 def perimeter_regular_polygon(n,s: Number) -> Number:
     """
@@ -218,7 +179,6 @@ def perimeter_regular_polygon(n,s: Number) -> Number:
     """
     return n*s
 
-print(perimeter_regular_polygon(8, 4))
 
 def area_regular_polygon(n,s: Number) -> Number:
     """
@@ -231,7 +191,6 @@ def area_regular_polygon(n,s: Number) -> Number:
     """
     return 1/4*n*s**2*(cos(pi/n)/sin(pi/n))
 
-print(area_regular_polygon(8, 4))
 
 def lateral_area_regular_pyramid(p,h_1: Number) -> Number:
     """
@@ -244,7 +203,6 @@ def lateral_area_regular_pyramid(p,h_1: Number) -> Number:
     """
     return 1/2*p*h_1
 
-print(lateral_area_regular_pyramid(15, 6))
 
 def surface_area_regular_pyramid(A_b,A_l: Number) -> Number:
     """
@@ -257,7 +215,6 @@ def surface_area_regular_pyramid(A_b,A_l: Number) -> Number:
     """
     return A_b + A_l
 
-print(surface_area_regular_pyramid(20, 45))
 
 def volume_regular_pyramid(A_b,h: Number) -> Number:
      """
@@ -270,7 +227,63 @@ def volume_regular_pyramid(A_b,h: Number) -> Number:
      """
      return 1/3*A_b*h
 
-print(volume_regular_pyramid(20, 8))
+
+def surface_area_cube(s: Number) -> Number:
+    """
+    Calculate surface area of the cube.
+    :param s: the side of the cube
+    :return: the surface area
+    >>>surface_area_cube(6)
+    216
+    """
+    return 6*s**2
+
+
+def volume_cube(s: Number) -> Number:
+    """
+    Calculate volume of the cube.
+    :param s: the side of the cube
+    :return: the volume
+    >>>volume_cube(6)
+    216
+    """
+    return s**3
+
+
+def perimeter_triangle(a,b,c: Number) -> Number:
+    """
+    Calculate perimeter of the triangle.
+    :param a: the side of the triangle
+    :param b: the side of the triangle
+    :param c: the side of the triangle
+    :return: the perimeter
+    >>>perimeter_triangle(3, 5, 6)
+    14
+    """
+    return a + b + c
+
+print(perimeter_triangle(3, 5, 6))
+
+
+def area_triangle(b,h: Number) -> Number:
+    """
+    Calculate area of the triangle.
+    :param b: the base of the triangle
+    :param h: the height of the triangle
+    :return: the area
+    >>>area_triangle(5, 6)
+    15
+    """
+    return 1/2*b*h
+
+
+
+
+
+
+
+
+
 
 
 
