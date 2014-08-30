@@ -59,13 +59,13 @@ def surface_area_cylinder(radius: Number, height: Number) -> Number:
     return 2*pi*radius**2 + 2*pi*radius*height
 
 
-def volum_cylinder(radius: Number, height: Number) -> Number:
+def volume_cylinder(radius: Number, height: Number) -> Number:
     """
     Calculate volume of the cylinder.
     :param radius: the radius the cylinder
     :param height: the height of the cylinder
     :return: the volume (cubic units of the radius and height)
-    >>>volum_cylinder(8,10)
+    >>>volume_cylinder(8,10)
     2010.6192982974676
     """
     return pi*radius**2*height
@@ -146,7 +146,6 @@ def volume_rectangular_prism(w,h,l: Number) -> Number:
     64
     """
     return l*w*h
-
 
 def surface_area_sphere(r: Number) -> Number:
     """
@@ -264,8 +263,6 @@ def perimeter_triangle(a,b,c: Number) -> Number:
     """
     return a + b + c
 
-print(perimeter_triangle(3, 5, 6))
-
 
 def area_triangle(b,h: Number) -> Number:
     """
@@ -277,7 +274,6 @@ def area_triangle(b,h: Number) -> Number:
     15
     """
     return 1/2*b*h
-
 
 
 
